@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Css Js workshop</title>
+    <!-- StyleSheet -->
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="top-bar">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="./assets/logo.svg" class="logo-image" />
+          </div>
+          <p class="logo-text">Movies</p>
+        </div>
+        <div class="search-container">
+          <img
+            src="./assets/searchIcon.svg"
+            id="searchButton"
+            onclick="handleMovieSearch()"
+          />
+          <input
+            type="text"
+            placeholder="Quick Search"
+            class="search-input"
+            id="movieQuery"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="sidebar">
+          <!-- Sidebar content here -->
+          <p class="topic selected" id="selected">Search Results</p>
+        </div>
+        <div class="main-content">
+          <!-- Main content here -->
+          <div class="movie-details">
+            Start Searching for your favourite genre/movie
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
